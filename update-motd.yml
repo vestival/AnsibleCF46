@@ -1,0 +1,7 @@
+---
+- name: Update MOTD
+  hosts: all
+  tasks:
+    - copy:
+        dest: /etc/motd
+        content: "CloudForms Approved MOTD!\n"
